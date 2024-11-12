@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+  <script>
+    let variable ="";
+    let calculation = '';
+  </script>
+  
+  <p>Calculator</p>
+
+  <div class="row">
+    <button onclick="variable = variable + `${1}`; console.log(variable); calculation =1;">1</button>
+    <button onclick="variable = variable + `${2}`; console.log(variable); calculation = 2;">2</button>
+    <button onclick="variable = variable + `${3}`; console.log(variable)">3</button>
+    <button onclick="variable = variable + `${' + '}`; console.log(variable);">+</button>
+  </div>
+  
+  <div class="row">
+    <button onclick="variable = variable + `${4}`; console.log(variable)">4</button>
+    <button onclick="variable = variable + `${5}`; console.log(variable)">5</button>
+    <button onclick="variable = variable + `${6}`; console.log(variable)">6</button>
+    <button onclick="variable = variable + `${' - '}`; console.log(variable)">-</button>
+  </div>
+  
+  <div class="row">
+    <button onclick="variable = variable + `${7}`; console.log(variable)">7</button>
+    <button onclick="variable = variable + `${8}`; console.log(variable)">8</button>
+    <button onclick="variable = variable + `${9}`; console.log(variable)">9</button>
+    <button onclick="variable = variable + `${' * '}`; console.log(variable)">*</button>
+  </div>
+
+  <div class="row">
+    <button onclick="variable = variable + `${0}`; console.log(variable)">0</button>
+    <button onclick="variable = variable + `${' . '}`; console.log(variable)">.</button>
+    <button onclick="variable =eval(variable); console.log(variable)">=</button>
+    <button onclick="variable = variable + `${' / '}`; console.log(variable)">/</button>
+  </div>
+
+  <div class="clearRow">
+    <button onclick="variable =''; console.log('Cleared');">Clear</button>
+  </div>
+
+  <style>
+    .row{
+      margin: 15px 0px;
+    }
+    .row button{
+      width: 25px;
+      height: 25px;
+    }
+  </style>
+
+</body>
+</html>
